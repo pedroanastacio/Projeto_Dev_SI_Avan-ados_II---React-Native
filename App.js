@@ -7,13 +7,13 @@ import BtnEntrar from './src/components/btnEntrar'
 class App extends Component {
   render() {
 
-    let nome = 'Pedro'
+    let nome = 'PEDRO'
 
     return(
       <View style={styles.container}>
         <BemVindo texto='Olá Seja Bem-Vindo'/>
-        <Text>Lorem Ipsum is simply dummy text of the {nome}</Text>
-        <Imagem largura={400} altura={300} texto='Clique aqui para acessar'/>
+        <Text style={styles.text}>Lorem Ipsum is simply dummy text of the <Text style={styles.nome}>{nome}</Text></Text>
+        <Imagem largura={280} altura={200} texto='Clique aqui para acessar'/>
         <BtnEntrar texto='Entrar'/>
       </View>
     )
@@ -22,11 +22,18 @@ class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: 50
   },
+
+  text: {
+    marginTop: 15
+  },
+
+  nome: {
+    fontWeight: 'bold'
+  }
 });
 
 export default App;
