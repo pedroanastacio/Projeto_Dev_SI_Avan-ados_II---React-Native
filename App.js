@@ -7,7 +7,7 @@ import BtnEntrar from './src/components/btnEntrar'
 class App extends Component {
   render() {
 
-    let nome = 'MARCOS'
+    let nome = 'LUCAS'
 
     return(
       <View style={styles.container}>
