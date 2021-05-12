@@ -14,7 +14,7 @@ class App extends Component {
         <BemVindo texto='Olá Seja Bem-Vindo'/>
         <Text style={styles.text}>Lorem Ipsum is simply dummy text of the <Text style={styles.nome}>{nome}</Text></Text>
         <Imagem largura={280} altura={200} texto='Clique aqui para acessar'/>
-        <BtnEntrar texto='Entrar'/>
+        <BtnEntrar texto='Acessar'/>
       </View>
     )
   }  
